@@ -1,0 +1,118 @@
+/* 
+    Created on : 21.04.2016, 14:00:52
+    Author     : fdai4551
+*/
+
+body {
+    background-color: #cfcfcf;
+    font-family: arial;
+
+}
+
+h1 {
+    font-family: verdana, sans-serif;
+}
+
+#fs_main {
+    background-color: #999;
+    font-family: arial;
+    width: 40%;
+}
+
+.lg_border {
+    background-color: #ccc;
+    border: 1px solid #333;
+    font-family: arial;
+}
+
+#buttons input {
+    float:right;
+    margin: 2px;
+}
+
+#fs_gender {
+    background-color: #ccc;
+    clear:both;
+}
+
+#maennlich {
+    float:left;
+}
+#weiblich {
+    float:left;
+}
+
+#d_male {
+    float:left;
+    width: 50%;
+}
+#d_female {
+    float:left;
+    width:50%;
+}
+
+.inputs {
+    padding: 10%;
+    width: 60%;
+    clear:both;
+}
+
+#d_gewicht {
+   width: 100%;
+   margin: 2%;
+   
+}
+#d_gewicht input {
+    float:right;
+    width: 100px;
+}
+#d_groesse {
+   width: 100%;
+   margin: 2%;
+}
+
+#d_groesse input {
+    float:right;
+    width: 100px;
+}
+
+#d_name {
+   margin: 2% 0 2% 0;
+}
+
+d_email {
+   margin: 2% 0 2% 0;
+}
+
+#d_anmerkungen {
+    margin: 2% 0 2% 0;
+}
+
+#d_name input {
+    float: right;
+    
+}
+
+#d_email input {
+    float: right;
+    
+}
+
+#d_anmerkungen input {
+    float: right;
+}
+
+.right {
+    float:right;
+    clear:both;
+    
+}
+
+#buttons {
+    clear:both;
+    padding:5% 0 5% 5%;
+}
+.cl_darkslategray {
+    color: darkslategray;
+
+}

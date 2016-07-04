@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>BMI-Rechner</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        
+    </head>
+    <body>
+        <!-- <div class="bmi">BMI-Rechner</div> -->
+        <h1>BMI-Rechner</h1>
+        <form action="http://vulcan.informatik.hs-fulda.de/bmi_berechnen.php" method="get">
+
+            <fieldset id="formular">
+                <legend>Angaben zur BMI-Berechnung</legend>
+                <div class="angaben">
+                    <label>Gewicht</label>
+                    <input id="gw" type="number" name="gewicht" placeholder="60" required> 
+                </div>
+
+                <div class="angaben">
+                    <label>Größe</label>
+                    <input id="gr" type="number" step="0.01" min="0.49" name="groesse" placeholder="1.70" required> 
+                </div>
+
+                <fieldset id="formular2">
+                    <legend>Geschlecht</legend>    
+                    <div class="rbutton">
+
+                        <input type="radio" value="male" name="Geschlecht">
+                        <label>Männlich</label> 
+
+
+                        <input type="radio" value="female" name="Geschlecht">
+                        <label>Weiblich</label>
+                    </div>
+
+                </fieldset><br>
+                
+               
+                <div class="angaben2">
+                    <label>Name</label>
+                    <input id="nfeld" type="text" name="name" placeholder="Max Muster"> 
+                    <!--<p id="message"></p>-->
+                </div>
+
+                <div class="angaben2">
+                    <label>Email</label>
+                    <input id="emfeld" type="text" name="email"  placeholder="max.muster@gmail.com"> 
+                </div>
+
+                <div class="angaben2">
+                    <label>Anmerkungen</label>
+                    <textarea rows="4" cols="20" name="anmerk" 
+                              placeholder="Tolle Seite hier :)"></textarea> 
+                </div>
+
+                <div class="rightbutton">
+                    <input id="send" type="submit" name="uname" value="Absenden" onsubmit="return pruefen();">
+                    <input id="cancel" type="reset" value="Zurücksetzen">
+                    
+                    
+                </div>
+                <div class="js">
+                    <input id="berechnen" type="button" value="BMI mit JS berechnen">
+                </div>
+
+            </fieldset>
+
+        </form>
+
+        <p>Ihr Body Mass Index beträgt <span id="ausgabe">___</span>.</p>
+        <a href="link1.html">Link</a>
+        <img src="bild.jpg">
+        <script type="text/javascript" src="mainUb5.js"></script>
+    </body>
+</html>

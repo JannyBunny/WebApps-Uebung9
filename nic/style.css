@@ -1,0 +1,98 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21.04.2016, 14:01:21
+    Author     : fdai4818
+*/
+
+body {
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+   
+}
+
+/*.bmi {
+    font-size: 20px;
+    margin-top: 2%;
+	margin-bottom: 2%;
+	      
+}*/
+
+.angaben {
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    text-align: right;
+    right: 35%;
+	   
+}
+.angaben input {
+    width: 15%;
+}
+
+.angaben2{
+    position: relative;
+    text-align: right;
+    
+    padding-top: 3%;
+    padding-bottom: 3%;
+    right: 15%;
+    resize:none;
+}
+.angaben2 label{
+    vertical-align: top;
+}
+
+
+#formular {
+    background-color: #e3e3e3;
+    margin-top: 2%;
+    margin-right: 60%;
+	   
+}
+
+legend{
+    border: 1px solid black;
+    text-align: left;
+     
+}
+
+label{
+	text-align: right;
+        margin: 0;
+	padding-left: 0;
+	padding-right: 5%;
+}
+
+#formular2{
+        background-color: #f0eeee;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	
+}
+
+.rbutton{
+	position: relative;
+	padding-left: 5%;
+		
+}
+
+.rightbutton{
+    position: relative;
+    text-align: right;
+    padding-bottom: 5%;
+}
+
+.js{
+    text-align: right;
+    float: right;
+    vertical-align: bottom;
+    
+}
+.ausgabe{
+    text-spacing: space-end;
+    
+}

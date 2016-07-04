@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Webapplikationen Uebung 5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css" >
+    </head>
+    <body>
+        <h1>BMI-Rechner</h1>
+        <fieldset id="fs_main">
+            <legend class="lg_border"> Angaben zur BMI-Berechnung</legend>
+            <form action="berechnen.php" method="get" onsubmit="return pruefen();">
+               <div class="inputs">
+                   <div id="d_gewicht" class="right" ><label for="gewicht"> Gewicht: </label> <input id="gewicht" type="number" name="gewicht" placeholder="60" required> </div>
+                   <div id="d_groesse" class="right" ><label for="groesse"> Größe: </label> <input id="groesse" type="number" name="groesse" step="0.01" placeholder="1.75" required> </div>
+               </div>
+               <fieldset id="fs_gender">
+                    <legend class="lg_border">Geschlecht</legend>
+                    <div id="d_male"> <label for="maennlich"> Männlich </label><input type="radio" name="geschlecht" value="maennlich" id="maennlich"> </div>
+                    <div id="d_female"> <label for="weiblich" > Weiblich </label><input type="radio" name="geschlecht" value="weiblich" id="weiblich"> </div>
+                </fieldset>
+                <div class="inputs">
+                    <div id="d_name" class="right"> <label for="name"> Name: </label> <input type="text" id="name" size="20" placeholder="Max Muster"> </div>
+                    <div id="d_email" class="right"> <label for="email"> Email: </label> <input type="text" id="email" size="20" placeholder="Max@Muster.de"> </div>
+                    <div id="d_anmerkungen" class="right"> <label for="anmerkungen"> Anmerkungen: </label> <textarea id="anmerkungen" name="anmerk" placeholder="Anmerkungen"> </textarea> </div>
+                </div>
+                <div id="buttons">
+                    <input type="reset">     
+                    <input id="senden" name="uname" type="submit" value="Absenden" >
+                    <input id="berechnen" type="button" value="BMI mit JS berechnet">
+                    <input id="berechnenphp" type="button" value="BMI mit PHP berechnet" onclick="calcBmiPhp()">
+                </div>    
+                
+            </form>
+        </fieldset>
+        <p class="cl_darkslategray">Ihr Body Mass Index beträgt: <span id="bmi_">____</span>.</p>
+        
+        <a href="http://www.frauenzimmer.de/cms/perfekter-bmi-bei-frauen-welcher-body-mass-index-gilt-als-attraktiv-2450153.html">BMI-Link</a>
+        <img src="http://autoimg.frauenzimmer.de/autoimg/1336908/300x600/perfekter-bmi-bei-frauen-welcher-body-mass-index-gilt-als-attraktiv.jpg" alt="bild" > 
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/bmiajax.js"></script>
+    </body>
+</html>
